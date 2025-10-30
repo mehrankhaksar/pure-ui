@@ -12,6 +12,14 @@ body {
   line-height: 1.5;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  font-family: inherit;
+}
+
 h1,
 h2,
 h3,
