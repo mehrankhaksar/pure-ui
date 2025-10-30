@@ -18,6 +18,8 @@ button {
   cursor: pointer;
   background: none;
   font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
 }
 
 h1,
