@@ -3,6 +3,7 @@ import "./index.css";
 import Tooltip from "./ui/tooltip/tooltip";
 import Accordion from "./ui/accordion/accordion";
 import Tab from "./ui/tab/tab";
+import Toast from "./ui/toast/toast";
 
 const tooltip = new Tooltip(document.querySelector(".tooltip"));
 tooltip.init();
@@ -15,3 +16,10 @@ accordions.forEach((accordion) => {
 
 const tabs = new Tab(document.querySelector(".tabs"));
 tabs.init();
+
+const toast = new Toast();
+toast.init();
+
+document
+  .querySelector(".toast-trigger")
+  .addEventListener("click", () => toast.showToast("Hello World!"));
